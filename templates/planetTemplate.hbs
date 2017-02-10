@@ -1,0 +1,16 @@
+<section id="card-{{name}}" class="card-wrapper col-sm-12" style="border: 2px solid black">
+ 	<h3 class="planetHeader"><strong>{{name}}</strong> </h3>
+ 	<h4 class="planetSize"><strong>Size: </strong></h4>
+ 	<h4 class="planetMass"><strong>Mass: </strong>{{mass}}</h4>
+ 	<h4 class="planetDistance"><strong>Distance from Sun: </strong>{{distanceFromSun}}</h4>
+ 	<h4><strong>Planet Composition:</strong></h4>
+ 	<ul class="planetComp"> 
+ 	{{#each composition}}
+ 		<li class="compositionListItem">{{this}}</li>
+ 	{{/each}}
+ 	</ul>
+ 	<h4 class="yearDiscovered"><strong>Year Discovered: </strong>{{yearDisovered}}</h4>
+ 	<h4 class="satellites"><strong>Satellites: </strong>{{satellites}}</h4>
+ 	<h4 class="planetProbes"><strong>Number of Probes: </strong>{{probes}}</h4>
+</section>
+
